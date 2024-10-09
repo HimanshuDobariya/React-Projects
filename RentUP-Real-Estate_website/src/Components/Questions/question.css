@@ -1,0 +1,23 @@
+.questions {
+  padding: 40px 0;
+  color: var(--text-white);
+  background-color: var(--color-primary);
+}
+
+.questions h1 {
+  font-size: 40px;
+  margin: 8px;
+}
+
+.questions button {
+  background: var(--color-secondary);
+  font-size: 24px;
+}
+
+@media (max-width: 860px) {
+  .questions .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,95 @@
+.properties .card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.properties .card .info {
+  padding: 30px;
+}
+.properties .card .info span {
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 2px;
+  font-weight: 600;
+  padding: 4px 15px;
+}
+
+.properties .card:nth-child(odd) .info span {
+  background: rgba(255, 152, 0, 0.1);
+  color: rgb(255, 152, 0);
+}
+.properties .card:nth-child(even) .info span {
+  background: rgba(37, 181, 121, 0.1);
+  color: rgb(37, 181, 121);
+}
+
+.properties svg {
+  font-size: 24px;
+  color: var(--text-gray);
+  opacity: 0.5;
+}
+
+.properties .card h4 {
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: start;
+}
+.properties .card p {
+  display: flex;
+  align-items: center;
+  color: var(--text-gray);
+  opacity: 0.8;
+  text-align: start;
+}
+
+.properties .btn-box {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 30px;
+}
+
+.heart-icon:hover {
+  color: #ff0000;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1099px) {
+  .properties .cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 720px) {
+  .properties .cards {
+    grid-template-columns: 1fr !important;
+  }
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-white: #fff;
+  --bg-gray: #f7f9fc;
+  --bg-dark: #122947;
+  --text-dark: #000;
+  --text-white: #fff;
+  --text-gray: #2d3954;
+  --color-primary: #27ae60;
+  --color-secondary: #ff6922;
+  --bx-shadow: 0 0 20px 0 rgba(112, 121, 138, 0.18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+button {
+  background: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  color: var(--text-white);
+  cursor: pointer;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+button svg {
+  color: var(--text-white);
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+input {
+  background-color: var(--bg-white);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 17px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--text-dark);
+  font-size: 16px;
+}
+
+.heading {
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.sub-heading {
+  margin: auto;
+  max-width: 600px;
+  color: var(--text-gray);
+  opacity: 0.9;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(112, 121, 138, 0.18);
+  padding: 30px;
+  text-align: center;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}

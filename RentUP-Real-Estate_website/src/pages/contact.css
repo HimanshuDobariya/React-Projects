@@ -1,0 +1,30 @@
+.contact form {
+  margin-top: 0;
+  margin: auto;
+  padding: 20px 30px;
+  width: 700px;
+  box-shadow: var(--bx-shadow);
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contact input:focus {
+  outline: 2px solid #000;
+}
+
+
+@media (max-width:800px){
+  .contact form {
+    width: 100%;
+  }
+}
