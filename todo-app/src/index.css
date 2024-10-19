@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-checkbox {
+    @apply appearance-none h-7 w-7  rounded bg-[#DEE0E2] cursor-pointer flex items-center justify-center outline-none;
+  }
+
+  .custom-checkbox:checked {
+    @apply bg-blue-600;
+  }
+
+  .custom-checkbox:checked::before {
+    content: "✓";
+    @apply text-white font-bold;
+    display: block;
+  }
+}
